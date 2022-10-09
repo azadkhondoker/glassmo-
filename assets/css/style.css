@@ -179,6 +179,12 @@ section {
   color: crimson;
   font-size: 18px;
   font-weight: 500;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.common-btn a:hover {
+  background-color: crimson;
+  color: whitesmoke;
 }
 
 .common-btn {
@@ -773,6 +779,38 @@ textarea {
 section.project-section img {
   border: 10px solid rgba(181, 158, 107, 0.6784313725);
   border-radius: 5px;
+}
+
+.contact-section {
+  padding-bottom: 50px;
+}
+.contact-section form input, .contact-section form textarea {
+  background: #C8D4C6;
+  color: rgba(0, 0, 0, 0.5215686275);
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.contact-section ul li {
+  display: inline-block;
+}
+.contact-section .contact-para {
+  padding-left: 40px;
+}
+.contact-section .contact-para h5 {
+  padding-bottom: 15px;
+}
+.contact-section .contact-para p {
+  padding-bottom: 15px;
+}
+.contact-section .contact-para ul li {
+  padding: 8px;
+  background-color: #C8D4C6;
+  border-radius: 50%;
+}
+.contact-section .contact-para ul li:hover a {
+  color: crimson;
+  padding: 10px;
 }
 
 /*======= Blog Standard =======*/ /*======= Blog Details =======*/ /*======= Blog Pagination =======*/ /*======= Blog Comments =======*/ /*======= Blog Sidebar =======*/ /*======= Product =======*/ /*======= Product Category =======*/ /*======= Product Filter =======*/ /*======= Product Sidebar =======*/ /*======= Footer =======*//*# sourceMappingURL=style.css.map */

@@ -126,6 +126,11 @@ section{
     color: crimson;
     font-size: 18px;
     font-weight: 500;
+    transition: 0.8s;
+    &:hover{
+        background-color: crimson;
+        color: whitesmoke;
+    }
 }
 
 .common-btn {

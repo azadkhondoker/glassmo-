@@ -161,3 +161,45 @@ section.project-section img {
     border: 10px solid #b59e6bad;
     border-radius: 5px;
 }
+
+
+
+.contact-section{
+    padding-bottom: 50px;
+    form{
+        input,textarea{
+            background: #C8D4C6;
+            color: #00000085;
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+    }
+    ul{
+        li{
+            display: inline-block;
+        }
+    }
+    .contact-para{
+        padding-left: 40px;
+        h5{
+            padding-bottom: 15px;
+        }
+        p{
+            padding-bottom: 15px;
+        }
+        ul{
+            li{
+                padding: 8px;
+                background-color: #C8D4C6;
+                border-radius: 50%;
+                &:hover a{
+                    color: crimson;
+                    padding: 10px;
+                }
+               
+            }
+        }
+    }
+}
+
