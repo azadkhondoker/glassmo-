@@ -142,9 +142,9 @@ body {
   background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
   font-size: 16px;
   color: var(--blue-dark);
-  line-height: 1.5px;
+  line-height: 24px;
   overflow-x: hidden;
-  padding: 5vh;
+  padding: 5vh 15px;
 }
 
 body::before {
@@ -170,6 +170,19 @@ section {
 .common {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.common-btn a {
+  padding: 10px 14px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  color: crimson;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.common-btn {
+  padding: 35px 0px;
 }
 
 /*======= Common Classes =======*/
@@ -641,42 +654,36 @@ textarea {
   border-radius: 30px;
   z-index: 20;
 }
-.common section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto 0;
-}
-.common section .home-text p {
+.common section .row .home-text p {
   font-size: 24px;
   color: #914351;
   line-height: 24px;
 }
-.common section .home-text p span {
+.common section .row .home-text p span {
   color: azure;
   font-weight: 600;
 }
-.common section .home-text h1 {
+.common section .row .home-text h1 {
   font-size: 42px;
   color: aliceblue;
   font-weight: 600;
 }
-.common section .home-text h2 {
+.common section .row .home-text h2 {
   font-size: 40px;
   font-weight: 600;
   color: #914351;
 }
-.common section .home-text h2 span {
+.common section .row .home-text h2 span {
   color: aliceblue;
 }
-.common section .home-image {
+.common section .row .home-image {
   margin-top: 50px;
 }
-.common section .home-image .img-box {
+.common section .row .home-image .img-box {
   border: 35px solid #DDBBB3;
   border-radius: 50%;
 }
-.common section .home-image .img-box img {
+.common section .row .home-image .img-box img {
   border: 5px solid #B2ECD7;
   border-radius: 50%;
   background-color: #ddd;
@@ -684,17 +691,9 @@ textarea {
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.common .about-section h3 {
+.common .about-section .section-head h3 {
   text-align: center;
-  padding-top: 50px;
-}
-.common .about-section .container .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.common .about-section .container .row .about-img {
-  padding-top: 30px;
+  padding: 50px 0px 30px;
 }
 .common .about-section .container .row .about-img img {
   background-color: #ddd;
@@ -703,4 +702,62 @@ textarea {
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.15) 0px -12px 30px, rgba(0, 0, 0, 0.08) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.15) 0px -12px 30px, rgba(0, 0, 0, 0.08) 0px 4px 6px, rgba(0, 0, 0, 0.08) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+.common .about-section .container .row .about-talk h4 {
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 15px;
+}
+.common .about-section .container .row .about-talk ul li {
+  display: inline-block;
+  padding: 7px;
+  line-height: 10px;
+}
+.common .about-section .container .row .about-talk ul li a {
+  background-color: floralwhite;
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+}
+.common .about-section .container .row .about-talk ul li a:hover {
+  color: whitesmoke;
+  background-color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.common .about-section .container .row .about-talk .about-btn a {
+  padding: 12px;
+  color: black;
+  font-size: 20px;
+  padding-top: 24px;
+}
+.common .about-section .container .row .about-talk .about-btn a:hover {
+  border-bottom: 2px solid crimson;
+  color: crimson;
+}
+.common .about-section .container .row .about-talk .education-history {
+  position: relative;
+}
+.common .about-section .container .row .about-talk .education-history::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -20px;
+  background: crimson;
+  height: 100%;
+  width: 2px;
+}
+.common .about-section .container .row .about-talk .education-history .education-year h5 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.common .about-section .container .row .about-talk .education-history .education-year h5 span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.common .about-section .container .row .about-talk .education-history .year {
+  padding: 20px 0px 10px;
+  color: crimson;
+}
+
 /*======= Blog Standard =======*/ /*======= Blog Details =======*/ /*======= Blog Pagination =======*/ /*======= Blog Comments =======*/ /*======= Blog Sidebar =======*/ /*======= Product =======*/ /*======= Product Category =======*/ /*======= Product Filter =======*/ /*======= Product Sidebar =======*/ /*======= Footer =======*//*# sourceMappingURL=style.css.map */
