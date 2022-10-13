@@ -175,12 +175,13 @@ section {
 .common-btn a {
   padding: 10px 14px;
   background-color: whitesmoke;
-  border-radius: 20px;
+  border-radius: 10px;
   color: crimson;
   font-size: 18px;
   font-weight: 500;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  margin: 5px;
 }
 .common-btn a:hover {
   background-color: crimson;
@@ -786,7 +787,7 @@ section.project-section img {
 }
 .contact-section form input, .contact-section form textarea {
   background: #C8D4C6;
-  color: rgba(0, 0, 0, 0.5215686275);
+  color: whitesmoke;
   padding: 20px;
   border-radius: 20px;
   font-size: 18px;
@@ -798,19 +799,44 @@ section.project-section img {
   padding-left: 40px;
 }
 .contact-section .contact-para h5 {
-  padding-bottom: 15px;
+  padding-bottom: 8px;
 }
 .contact-section .contact-para p {
   padding-bottom: 15px;
 }
 .contact-section .contact-para ul li {
-  padding: 8px;
+  margin-right: 5px;
+}
+.contact-section .contact-para ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   background-color: #C8D4C6;
   border-radius: 50%;
+  font-size: 20px;
+  color: whitesmoke;
 }
 .contact-section .contact-para ul li:hover a {
   color: crimson;
-  padding: 10px;
+}
+
+.education-year {
+  position: relative;
+}
+
+.education-year::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: crimson;
+  border-radius: 50%;
+  top: 61px;
+  left: -26px;
 }
 
 /*======= Blog Standard =======*/ /*======= Blog Details =======*/ /*======= Blog Pagination =======*/ /*======= Blog Comments =======*/ /*======= Blog Sidebar =======*/ /*======= Product =======*/ /*======= Product Category =======*/ /*======= Product Filter =======*/ /*======= Product Sidebar =======*/ /*======= Footer =======*//*# sourceMappingURL=style.css.map */

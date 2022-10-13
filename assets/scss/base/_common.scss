@@ -122,11 +122,12 @@ section{
     
     padding: 10px 14px;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 10px;
     color: crimson;
     font-size: 18px;
     font-weight: 500;
     transition: 0.8s;
+    margin: 5px;
     &:hover{
         background-color: crimson;
         color: whitesmoke;
